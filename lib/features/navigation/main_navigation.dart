@@ -5,6 +5,7 @@ import 'package:rendiven/features/auth/presentation/bloc/auth_bloc.dart';
 import 'package:rendiven/features/auth/presentation/screens/home_screen.dart';
 import 'package:rendiven/features/fuel/presentation/screens/fuel_history_screen.dart';
 import 'package:rendiven/features/vehicle/presentation/screens/vehicle_screen.dart';
+import 'package:rendiven/features/efficiency/presentation/screens/efficiency_list_screen.dart';
 import 'package:rendiven/services/storage/storage_service.dart';
 
 class MainNavigation extends StatefulWidget {
@@ -20,7 +21,7 @@ class _MainNavigationState extends State<MainNavigation> {
   final List<Widget> _screens = [
     HomeScreen(),
     const VehicleScreen(),
-    const PlaceholderScreen(title: 'Rendimiento'),
+    const EfficiencyListScreen(),
     const FuelHistoryScreen(),
   ];
 
